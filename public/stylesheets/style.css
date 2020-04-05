@@ -1,0 +1,42 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+/*Custom code*/
+.editors {
+  display: flex;
+  justify-content: space-around;
+}
+
+.header {
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-bottom: 30px;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.quillEditor{
+  width:45%;
+  height: 600px;
+  margin-bottom:100px;
+}
+a {
+  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+#logo {
+  height: 65px;
+  text-align: center;
+}
+
