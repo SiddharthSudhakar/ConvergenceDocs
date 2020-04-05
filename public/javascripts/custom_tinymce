@@ -1,0 +1,45 @@
+tinymce.init({
+  selector: 'textarea#tinyMCE_editor',
+  height: 500,
+  menubar: false,
+  external_plugins: {"wave": "https://cdn2.codox.io/waveTinymce/plugin.min.js"},
+      wave: {
+        "docId": "doc1", // unique document id,
+        "username": "Marco", // unique username or email address
+        "apiKey": "3d7f1aea-540a-4e9b-af2c-39c5e42959ad", // this is your actual API Key
+        "domain":"https://tinyurl.com" //Full URL is : https://tinyurl.com/convergence-docs
+      },
+  plugins: [
+    'advlist autolink lists link image charmap print preview anchor',
+    'searchreplace visualblocks code fullscreen',
+    'insertdatetime media table paste code help wordcount'
+  ],
+  toolbar: 'undo redo | formatselect | ' +
+  'bold italic backcolor | alignleft aligncenter ' +
+  'alignright alignjustify | bullist numlist outdent indent | ' +
+  'removeformat | help',
+  content_css: 'stylesheets/tinymce_editor.css'
+});
+
+tinymce.init({
+  selector: 'textarea#tinyMCE_editor2',
+  height: 500,
+  menubar: false,
+  external_plugins: {"wave": "https://cdn2.codox.io/waveTinymce/plugin.min.js"},
+      wave: {
+        "docId": "doc1", // unique document id,
+        "username": "Polo", // unique username or email address
+        "apiKey": "3d7f1aea-540a-4e9b-af2c-39c5e42959ad", // this is your actual API Key
+        "domain":"https://tinyurl.com" //Full URL is : https://tinyurl.com/convergence-docs
+      },
+  plugins: [
+    'advlist autolink lists link image charmap print preview anchor',
+    'searchreplace visualblocks code fullscreen',
+    'insertdatetime media table paste code help wordcount'
+  ],
+  toolbar: 'undo redo | formatselect | ' +
+  'bold italic backcolor | alignleft aligncenter ' +
+  'alignright alignjustify | bullist numlist outdent indent | ' +
+  'removeformat | help',
+  content_css: 'stylesheets/tinymce_editor.css'
+});

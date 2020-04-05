@@ -8,7 +8,15 @@
 
   <!-- Add reference to Wave -->
   <!-- Include the Codox Wave library -->
+  <!-- Wave + Quill -->
   <script src="https://app.codox.io/plugins/wave.client.js?apiKey=dc1e5915-a56b-4b22-a8b6-a8392aeee8de&app=quilljs" type="text/javascript"></script>
+  <!-- Wave + TinyMCE -->
+  <script src="https://cloud.tinymce.com/stable/tinymce.js"></script>
+  <script type= "text/javascript">
+    
+  </script>
+  <!-- Include custom Tabs code -->
+  <script src="javascripts/custom_tabs"></script>
 
 </head>
 
@@ -17,25 +25,115 @@
     <h1>Convergence Docs - Real Time Collaboration</h1>
     <p>Try out the Notepad and see the collaboration in Action.
       
-      This is magic in minimal lines of code.
+    <br>  This is magic in minimal lines of code. </p>
+  </div>
+  <div id="EditorPane">
+    <div class="Editor_Selector">
+      <!-- Tab links -->
+        <div class="tab">
+          <button class="tablinks" onclick="openTabs(event, 'Quill_Select')">Quill Editor</button>
+          <button class="tablinks" onclick="openTabs(event, 'TinyMCE_Select')">TinyMCE Editor</button>
+        </div>
 
-      Credits: Wave + ExpressJS + QuillJS
-    </p>
-  </div>
-  <div class="editors">
-    <div class="quillEditor">
-      <div id="quillEditor1Toolbar"> </div>
-      <div id="quillEditor1"> </div>
+        <!-- Tab content -->
+        <div id="Quill_Select" class="tabcontent">
+          <h3>QuillJS</h3>
+          <p>
+            Credits: Wave + ExpressJS + QuillJS
+          </p>
+          <div class="editors" >
+            <div class="quillEditor">
+              <div id="quillEditor1Toolbar"> </div>
+              <div id="quillEditor1"> </div>
+            </div>
+            <div class="quillEditor">
+              <div id="quillEditor2"> </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="TinyMCE_Select" class="tabcontent">
+          <h3>TinyMCE</h3>
+          <p>
+            Credits: Wave + ExpressJS + TinyMCE
+          </p>
+            <div class="tinyMCE_container">
+              <div class="tinyMCE_EditorClass">
+                  <textarea id="tinyMCE_editor">
+                  <p style="text-align: center;">
+                    <img title="TinyMCE Logo" src="//www.tiny.cloud/images/glyph-tinymce@2x.png" alt="TinyMCE Logo" width="110" height="97" />
+                  </p>
+
+                  <h2 style="text-align: center;">Welcome to the TinyMCE editor demo!</h2>
+
+                  <h2>Got questions or need help?</h2>
+
+                  <ul>
+                    <li>Our <a href="https://www.tiny.cloud/docs/">documentation</a> is a great resource for learning how to configure TinyMCE.</li>
+                    <li>Have a specific question? Visit the <a href="https://community.tiny.cloud/forum/" target="_blank">Community Forum</a>.</li>
+                    <li>We also offer enterprise grade support as part of <a href="https://www.tiny.cloud/pricing">TinyMCE premium plans</a>.</li>
+                  </ul>
+
+                  <h2>A simple table to play with</h2>
+
+                  <table style="text-align: center;">
+                    <thead>
+                      <tr>
+                        <th>Product</th>
+                        <th>Cost</th>
+                        <th>Really?</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>TinyMCE</td>
+                        <td>Free</td>
+                        <td>YES!</td>
+                      </tr>
+                      <tr>
+                        <td>Plupload</td>
+                        <td>Free</td>
+                        <td>YES!</td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                  <h2>Found a bug?</h2>
+
+                  <p>
+                    If you think you have found a bug please create an issue on the <a href="https://github.com/tinymce/tinymce/issues">GitHub repo</a> to report it to the developers.
+                  </p>
+
+                  <h2>Finally ...</h2>
+
+                  <p>
+                    Don't forget to check out our other product <a href="http://www.plupload.com" target="_blank">Plupload</a>, your ultimate upload solution featuring HTML5 upload support.
+                  </p>
+                  <p>
+                    Thanks for supporting TinyMCE! We hope it helps you and your users create great content.<br>All the best from the TinyMCE team.
+                  </p>
+                </textarea>
+              </div>
+              <div class="tinyMCE_EditorClass">
+                <textarea id="tinyMCE_editor2"></textarea>
+              </div>
+          </div>
+
+
+        </div>
+
     </div>
-    <div class="quillEditor">
-      <div id="quillEditor2"> </div>
-    </div>
+    
   </div>
+
 
   <!-- Include the Quill library -->
   <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
-  <script src="javascripts/custom_quill.js" >
-  </script>
+  <script src="javascripts/custom_quill.js" ></script>
+  <!-- Include the TinyMCE Library-->
+  
+  <script src="javascripts/custom_tinymce"></script>
+  
 
 </body>
 
