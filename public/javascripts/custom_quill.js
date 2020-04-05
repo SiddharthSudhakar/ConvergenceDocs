@@ -40,10 +40,9 @@ var config = {
 app: "quilljs",
 editor: editor1,
 docId: docId,
-username: "Marko"
+username: "Marco "
 };
 
-config.username = "Marko"; //unqiue user name or email address
 config.apiKey = "dc1e5915-a56b-4b22-a8b6-a8392aeee8de"; // this is your actual API Key
 config.domain = "https://tinyurl.com"; //Full URL is : https://tinyurl.com/convergence-docs
 
@@ -52,4 +51,4 @@ var codox = new Codox();
 codox.start(config);
 
 var codox2 = new Codox();
-codox2.start(Object.assign({}, config, {editor: editor2, username: "Polo"}));
+codox2.start(Object.assign({}, config, {editor: editor2, username: "Polo "}));
